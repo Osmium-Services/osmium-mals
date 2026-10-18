@@ -26,6 +26,16 @@ class MalsCart
         return self::$config = self::fromContent($content);
     }
 
+    /**
+     * payment.hosted - tell Settings > Payments that payment is taken on Mals' own page, so no provider is chosen there.
+     *
+     * @return array{label: string, settingsRoute: string}
+     */
+    public static function hostedPayment(array $payload): array
+    {
+        return ['label' => 'Mals', 'settingsRoute' => 'settings/mals/'];
+    }
+
     public static function clearCache(): void
     {
         self::$config = null;

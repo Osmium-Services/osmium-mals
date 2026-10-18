@@ -25,6 +25,11 @@ final class MalsCartTest extends TestCase
         ]);
     }
 
+    public function test_hosted_payment_names_mals_and_its_settings_page(): void
+    {
+        $this->assertSame(['label' => 'Mals', 'settingsRoute' => 'settings/mals/'], MalsCart::hostedPayment([]));
+    }
+
     public function test_no_file_means_off_with_empty_settings(): void
     {
         $config = MalsCart::fromContent(null);
