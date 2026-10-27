@@ -1,9 +1,10 @@
 {
     "id": "mals",
     "name": "Mals Ecommerce",
-    "version": "0.3.1",
+    "version": "0.3.2",
     "description": "Sells through the Mals hosted cart: add-to-cart buttons post to Mals, the checkout is Mals' own page, and the header shows the cart count. No basket or checkout pages of its own",
     "category": "payments",
+    "website": "https://www.mals-e.com",
     "author": {
         "name": "Gavin Cox"
     },
