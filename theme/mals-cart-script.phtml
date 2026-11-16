@@ -1,2 +1,6 @@
 <?php // Rendered at the end of every page by the theme's service body-end hook: the add-to-cart click handler. ?>
-<script src="/assets/services/mals/mals-cart.js" defer></script>
+<?php
+$path = ($_SERVER['DOCUMENT_ROOT'] ?? '') . '/assets/services/mals/mals-cart.js';
+$version = \is_file($path) ? '?v=' . \filemtime($path) : ''; // a new URL after each update, so no cache keeps the old script
+?>
+<script src="/assets/services/mals/mals-cart.js<?= $version ?>" defer></script>
