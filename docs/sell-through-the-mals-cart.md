@@ -1,6 +1,7 @@
 ---
 title: Sell through the Mals cart
 tags: mals, cart, ecommerce, checkout, add to cart, hosted cart
+page: admin/settings/mals
 ---
 
 **Mals Ecommerce** sells through the Mals hosted cart. Add-to-cart buttons send the product to Mals, and visitors pay on Mals' own pages, so your site has no basket or checkout pages of its own.
